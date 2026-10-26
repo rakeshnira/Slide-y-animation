@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide-y</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .head h1{
+            padding-top:1rem;
+            text-shadow: 0 0 5px black;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container{
+            width:50%;
+            height:95vh;
+            /* border:2px solid blue; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(223, 218, 218);
+            border-radius: 2rem;
+            }
+        .box{
+            width: 70%;
+            height:90%;
+            /* border:1px solid red; */
+            overflow-y: scroll;
+        }
+        .box::-webkit-scrollbar{
+            display: none;
+        }
+        .img{
+            width:12rem;
+            height:19rem;
+            border-radius: 1rem;
+            margin:10px;
+            box-shadow: 0 0 10px black;
+            transition:all 1s;
+        }
+        .img:hover{
+            transform: scale(1.1);
+            box-shadow: 2px 0 10px aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+       <h1> <marquee>Trending Products</marquee></h1>
+    </div> 
+    <div class="container">
+        <div class="box">
+            <img class="img" src="https://picsum.photos/208/301">
+            <img class="img" src="https://picsum.photos/208/302">
+            <img class="img" src="https://picsum.photos/208/303">
+            <img class="img" src="https://picsum.photos/208/304">
+            <img class="img" src="https://picsum.photos/208/305">
+            <img class="img" src="https://picsum.photos/208/306">
+            <img class="img" src="https://picsum.photos/208/307">
+            <img class="img" src="https://picsum.photos/208/308">
+            <img class="img" src="https://picsum.photos/208/309">
+            <img class="img" src="https://picsum.photos/208/310">
+            <img class="img" src="https://picsum.photos/208/320">
+            <img class="img" src="https://picsum.photos/208/330">
+            <img class="img" src="https://picsum.photos/208/340">
+            <img class="img" src="https://picsum.photos/208/350">
+            <img class="img" src="https://picsum.photos/208/360">
+            <img class="img" src="https://picsum.photos/208/370">
+            <img class="img" src="https://picsum.photos/208/380">
+            <img class="img" src="https://picsum.photos/208/390">
+        </div>
+</body>
+</html>
